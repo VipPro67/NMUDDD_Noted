@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/item_note_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/note_background"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@id/item_note_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/item_note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:hint="Note Title"
+            android:textColor="@color/color_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@id/item_note_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:hint="Note Subtitle"
+            android:textColor="@color/color_dark"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@id/item_note_reminder_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:tint="@color/color_theme"
+                android:src="@drawable/icon_alarm"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@id/item_note_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginStart="8dp"
+                android:hint="Note Created At"
+                android:textColor="@color/color_theme"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/item_note_created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:hint="Note Created At"
+            android:textColor="@color/color_dark"
+            android:textSize="10sp"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@id/item_note_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/theme_chooser_theme_ten_rectangle"
+            android:visibility="gone"
+            app:riv_corner_radius="10dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/item_note_locker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/note_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lock_icon_outline"
+            android:layout_gravity="center_horizontal"
+            android:padding="35dp"
+            android:alpha=".8"
+            app:tint="@color/color_dark"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+</RelativeLayout>

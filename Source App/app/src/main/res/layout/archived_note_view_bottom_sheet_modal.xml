@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="41dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="15dp"
+        android:background="?divider_inline" />
+
+    <TextView
+        android:id="@id/note_created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="03.12.2003, 12:00 PM"
+        android:textColor="?color_dark"
+        tools:ignore="HardcodedText,RelativeOverlap" />
+
+    <TextView
+        android:id="@id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Note Title"
+        android:background="@drawable/input_rectangle_background"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="?color_dark"
+        android:textDirection="locale"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@id/note_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:text="@string/note_subtitle"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="?color_dark"
+        android:textDirection="locale"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@id/note_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/input_rectangle_background_color"
+        android:gravity="top"
+        android:text="@string/note_description"
+        android:minHeight="100dp"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/color_dark"
+        android:textDirection="locale"
+        android:textSize="13sp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:scrollbars="none"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/note_image_container"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="0dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@id/note_image"
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/note_background"
+                        app:riv_corner_radius="10dp" />
+
+                    <ImageView
+                        android:id="@id/note_image_share"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/image_button_shape"
+                        android:padding="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/icon_share"
+                        app:tint="?color_dark"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/note_video_container"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="0dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@id/note_video"
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/note_background"
+                        app:riv_corner_radius="10dp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:padding="6dp"
+                        android:src="@drawable/icon_play"
+                        app:tint="@color/color_white"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@id/note_web_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/color_theme"
+        android:textSize="13sp"
+        android:layout_marginBottom="30dp"
+        tools:ignore="RelativeOverlap" />
+
+</LinearLayout>

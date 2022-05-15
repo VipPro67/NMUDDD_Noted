@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="ThemeAdapter">
+        <attr name="color_light" format="color" />
+        <attr name="color_light_separate" format="color" />
+        <attr name="color_lighter" format="color" />
+        <attr name="color_dark" format="color" />
+        <attr name="color_darker" format="color" />
+        <attr name="color_background" format="color" />
+        <attr name="color_grey" format="color" />
+        <attr name="color_icon" format="color" />
+        <attr name="item_drawer" format="color" />
+        <attr name="divider_inline" format="reference" />
+    </declare-styleable>
+</resources>

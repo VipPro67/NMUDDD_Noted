@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?color_background">
+
+    <TextView
+        android:id="@id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/input_round_background"
+        android:text="@string/search_notes"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="?color_dark"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@id/categories_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@id/add_category"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight=".1"
+            android:background="@drawable/button_mini"
+            android:gravity="center"
+            android:padding="7dp"
+            android:src="@drawable/icon_plus"
+            app:tint="?color_light"
+            tools:ignore="ContentDescription,HardcodedText,SmallSp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/categories_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/notes_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categories_container"
+        android:clipToPadding="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="15dp" />
+
+    <include
+        android:id="@id/notes_empty_placeholder"
+        layout="@layout/placeholder_note_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notes_recyclerview"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/color_theme">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="7dp"
+                android:src="@drawable/icon_plus"
+                app:tint="?color_light"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

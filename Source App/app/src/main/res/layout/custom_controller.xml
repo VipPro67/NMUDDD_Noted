@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_rew"
+            app:tint="@color/color_white"
+            android:background="?actionBarItemBackground"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/icon_replay"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_play"
+            app:tint="@color/color_white"
+            android:background="?actionBarItemBackground"
+            android:src="@drawable/icon_play"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_pause"
+            app:tint="@color/color_white"
+            android:background="?actionBarItemBackground"
+            android:src="@drawable/icon_pause"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_ffwd"
+            android:layout_marginStart="16dp"
+            app:tint="@color/color_white"
+            android:background="?actionBarItemBackground"
+            android:src="@drawable/icon_forward"
+            tools:ignore="ContentDescription"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/exo_position"
+                android:textColor="@color/color_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="#CBCDCB"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/exo_duration"
+                android:textColor="#CBCDCB" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/bt_fullscreen"
+                android:padding="5dp"
+                android:background="?actionBarItemBackground"
+                android:src="@drawable/icon_full_screen"
+                app:tint="@color/color_white"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exo_progress"
+            android:layout_marginTop="-8dp"
+            app:unplayed_color="#95989F"
+            app:buffered_color="@color/color_white"
+            app:played_color="@color/color_danger"
+            app:bar_height="1.4dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

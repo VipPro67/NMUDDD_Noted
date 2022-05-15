@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@id/menu_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/home"/>
+
+        <item android:id="@id/menu_reminders"
+            android:icon="@drawable/icon_alarm"
+            android:title="@string/reminders"/>
+
+        <item android:id="@id/menu_archive"
+            android:icon="@drawable/icon_archive"
+            android:title="@string/archive"/>
+
+        <item android:id="@id/menu_trash"
+            android:icon="@drawable/trash_icon"
+            android:title="@string/trash"/>
+
+        <item android:id="@id/menu_notification"
+            android:icon="@drawable/icon_bell"
+            android:title="@string/notifications"/>
+
+        <item android:id="@id/menu_widget"
+            android:icon="@drawable/icon_widget"
+            android:title="@string/widget"/>
+
+
+        <item android:id="@id/menu_rate"
+            android:icon="@drawable/star_icon"
+            android:title="@string/rate_us"/>
+
+        <item android:id="@id/menu_settings"
+            android:icon="@drawable/gear_icon"
+            android:title="@string/settings"/>
+
+        <item android:id="@id/menu_about"
+            android:icon="@drawable/profile_icon"
+            android:title="@string/about"/>
+    </group>
+
+</menu>

@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_theme</item>
+        <item name="color_light">@color/color_white</item>
+        <item name="color_background">@color/colorBackgroundLight</item>
+        <item name="color_lighter">@color/color_light_white</item>
+        <item name="color_dark">@color/color_dark</item>
+        <item name="color_grey">@color/color_grey</item>
+        <item name="color_light_separate">@color/color_white</item>
+        <item name="divider_inline">@drawable/divider_inline_light</item>
+        <item name="color_icon">@color/color_grey_lighter</item>
+        <item name="item_drawer">@color/navigation_drawer_item_color_light</item>
+        <item name="android:windowActivityTransitions" tools:ignore="NewApi">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_theme</item>
+        <item name="color_light">@color/color_dark</item>
+        <item name="color_background">@color/color_dark</item>
+        <item name="color_lighter">@color/color_darker</item>
+        <item name="color_dark">@color/color_white</item>
+        <item name="color_grey">@color/reverse_dark</item>
+        <item name="color_light_separate">@color/reverse_dark</item>
+        <item name="divider_inline">@drawable/divider_inline_dark</item>
+        <item name="color_icon">@color/reverse_dark</item>
+        <item name="item_drawer">@color/navigation_drawer_item_color_dark</item>
+        <item name="android:windowActivityTransitions" tools:ignore="NewApi">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="DetailAnimation">
+        <item name="android:windowEnterAnimation">@anim/up_down</item>
+        <item name="android:windowExitAnimation">@anim/bottom_up</item>
+    </style>
+
+    <style name="DetailAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/ad_mark</item>
+        <item name="android:background">@color/color_theme</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!--  Custom Modal  -->
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_modal_shape</item>
+    </style>
+
+    <string name="ad_mark">AD</string>
+
+    <style name="SmallSize">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
+

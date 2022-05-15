@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/sort_a_to_z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?color_lighter"
+            app:cardCornerRadius="21dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_sort"
+                android:padding="11dp"
+                tools:ignore="ContentDescription"
+                app:tint="?color_dark" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:textSize="16sp"
+            android:textColor="?color_dark"
+            android:text="@string/sort_by"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/delete_all_completed_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?color_lighter"
+            app:cardCornerRadius="21dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/trash_icon"
+                android:padding="11dp"
+                tools:ignore="ContentDescription"
+                app:tint="?color_dark" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:textSize="16sp"
+            android:textColor="?color_dark"
+            android:text="@string/delete_all_completed_tasks"/>
+
+    </LinearLayout>
+
+</LinearLayout>

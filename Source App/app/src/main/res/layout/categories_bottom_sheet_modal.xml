@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="41dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="15dp"
+        android:background="?divider_inline" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_category"
+        android:textColor="?color_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@id/add_category"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_mini_dark"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/add_new_category"
+        android:textAllCaps="true"
+        android:textColor="?color_light"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SmallSp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/categories_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp" />
+
+</LinearLayout>

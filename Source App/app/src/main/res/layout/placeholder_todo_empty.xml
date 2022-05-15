@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/todo_background"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/add_your_first_todo"
+        android:textColor="?color_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/any_tasks_to_add_add_your_first_todo_task_by_clicking_on_add_button"
+        android:textAlignment="center"
+        android:textColor="?color_dark"
+        android:textSize="13sp" />
+
+</LinearLayout>

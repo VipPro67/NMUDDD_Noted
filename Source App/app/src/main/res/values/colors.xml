@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- main colors, just change colorAccent -->
+    <color name="colorPrimary">#030303</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorBackgroundLight">#f8f8f8</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_light_white">#F2F5F6</color>
+    <color name="color_darker">#212121</color>
+    <color name="color_dark">#121212</color>
+    <color name="reverse_light">#F2F5F6</color>
+    <color name="reverse_dark">#1f1f1f</color>
+    <color name="color_grey">#ebebeb</color>
+    <color name="color_grey_lighter">#f5f5f5</color>
+    <color name="color_danger">#EC353F</color>
+
+    <!-- change this colors with your desired one -->
+    <color name="color_theme">#FF5733</color>
+    <color name="color_alert">#62A2F9</color>
+    <color name="color_alert_alpha">#ECF5FE</color>
+
+    <!-- notes themes -->
+    <!-- this colors can't be changed,
+    changing any of this colors will make
+    an unpredictable behavior -->
+    <color name="note_theme_one">#fee7ab</color>
+    <color name="note_theme_two">#ffdbc3</color>
+    <color name="note_theme_three">#ffc5d1</color>
+    <color name="note_theme_four">#e7d0f9</color>
+    <color name="note_theme_five">#cdccfe</color>
+    <color name="note_theme_six">#b5e9d3</color>
+    <color name="note_theme_seven">#b3e5fd</color>
+    <color name="note_theme_eight">#b5d8ff</color>
+    <color name="note_theme_nine">#e5e5e5</color>
+    <color name="note_theme_ten">#bcbcbc</color>
+
+</resources>

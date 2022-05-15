@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?color_background"
+    tools:context=".activities.AboutActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="?color_light_separate"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@id/go_back"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="?actionBarItemBackground"
+                        android:padding="4dp"
+                        android:src="@drawable/long_arrow_back"
+                        app:tint="?color_dark"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/notifications"
+                        android:textColor="?color_dark"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@id/delete_all_notifications"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?actionBarItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/trash_icon_outline"
+                    app:tint="?color_dark"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/notifications_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@id/no_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/there_are_no_notifications_yet"
+                android:textAlignment="center"
+                android:textColor="?color_dark"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

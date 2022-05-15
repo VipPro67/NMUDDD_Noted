@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?color_background"
+    android:orientation="vertical"
+    tools:context=".activities.ViewAttachedVideoActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fit"
+        app:hide_on_touch="true"
+        app:show_timeout="5000"
+        android:layout_centerInParent="true"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        android:background="@color/color_dark"
+        app:player_layout_id="@layout/exo_simple_player_view"
+        app:controller_layout_id="@layout/custom_controller"/>
+
+    <ProgressBar
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:id="@id/progress_bar"
+        android:layout_gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        app:cardCornerRadius="17dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="?color_light_separate">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <ImageView
+                android:id="@id/go_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/long_arrow_back"
+                app:tint="?color_dark"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@id/note_video_remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/trash_icon_outline"
+                app:tint="?color_dark"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
