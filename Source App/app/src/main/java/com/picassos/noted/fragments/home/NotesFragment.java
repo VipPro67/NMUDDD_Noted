@@ -102,7 +102,7 @@ public class NotesFragment extends Fragment implements NotesListener,
         // fab, add notes
         CardView addNote = view.findViewById(R.id.add_note);
         addNote.setOnClickListener(v -> {
-            //startActivityForResult(new Intent(getContext(), AddNoteActivity.class), REQUEST_CODE_ADD_NOTE_OK);
+            startActivityForResult(new Intent(getContext(), AddNoteActivity.class), REQUEST_CODE_ADD_NOTE_OK);
 
         });
 
