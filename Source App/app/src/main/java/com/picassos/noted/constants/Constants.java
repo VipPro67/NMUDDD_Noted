@@ -4,6 +4,7 @@ package com.picassos.noted.constants;
 
 public class Constants {
 
+
     /**
      * SPLASH_SCREEN_TIMEOUT used for
      * splash screen interval.
@@ -15,7 +16,7 @@ public class Constants {
      * EMAIL_ADDRESS used for feedback
      * and other contact options
      */
-    public static final String EMAIL_ADDRESS = "rixhion@gmail.com";
+    public static final String EMAIL_ADDRESS = "nhomuddd.TVTT@gmail.com";
 
     /**
      * app privacy policy url.
@@ -39,8 +40,8 @@ public class Constants {
      * 2. rewarded ad
      */
     public static final boolean ENABLE_GOOGLE_ADMOB_ADS = true;
-    public static final String GOOGLE_ADMOB_NATIVE_AD_UNI_ID = "ca-app-pub-5451983796114290/6371660017";
-    public static final String GOOGLE_ADMOB_REWARDED_AD_UNIT_ID = "ca-app-pub-5451983796114290/2679827013";
+    public static final String GOOGLE_ADMOB_NATIVE_AD_UNI_ID = "";
+    public static final String GOOGLE_ADMOB_REWARDED_AD_UNIT_ID = "";
 
     /**
      * enable start app with
