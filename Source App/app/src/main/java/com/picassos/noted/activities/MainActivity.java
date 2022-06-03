@@ -165,9 +165,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         /* handle link of the Google Play Store */
         try {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/tvtt-nmuddd/trang-ch%E1%BB%A7")));
         } catch (ActivityNotFoundException errorException) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/tvtt-nmuddd/trang-ch%E1%BB%A7" )));
         }
     }
 
