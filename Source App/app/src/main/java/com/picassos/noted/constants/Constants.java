@@ -24,7 +24,7 @@ public class Constants {
      * order to be approved by the
      * Google Play Store support team
      */
-    public static final String PRIVACY_POLICY_URL = "https://google.com";
+    public static final String PRIVACY_POLICY_URL = "https://sites.google.com/view/tvtt-nmuddd/trang-ch%E1%BB%A7";
 
     /**
      * app terms of use url
@@ -32,14 +32,14 @@ public class Constants {
      * in order to be approved by the
      * Google Play Store support team
      */
-    public static final String TERMS_OF_USE_URL = "https://google.com";
+    public static final String TERMS_OF_USE_URL = "https://sites.google.com/view/tvtt-nmuddd/trang-ch%E1%BB%A7";
 
     /**
      * enable google admob ads
      * 1. native ad
      * 2. rewarded ad
      */
-    public static final boolean ENABLE_GOOGLE_ADMOB_ADS = true;
+    public static final boolean ENABLE_GOOGLE_ADMOB_ADS = false;
     public static final String GOOGLE_ADMOB_NATIVE_AD_UNI_ID = "";
     public static final String GOOGLE_ADMOB_REWARDED_AD_UNIT_ID = "";
 
