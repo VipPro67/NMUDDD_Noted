@@ -18,8 +18,11 @@ Huỳnh Thiện Tâm	20521867
 
 ## Công cụ sử dụng:
 AndroidStudio
+
 Language: Java
+
 Database: SQLite
+
 ---
 ## Các chức năng chính:
 Thêm xoá sửa ghi chú, công việc(Note, todo)
@@ -38,7 +41,9 @@ Phím tắt(widget)
 
 Cài đặt(setting)
 ---
-## Yêu cầu thiết bị:Android
+## Yêu cầu thiết bị:
+Android
+
 minSdkVersion 22
 ---
 ## Giao diện chính:
