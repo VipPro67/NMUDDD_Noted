@@ -40,11 +40,13 @@ Phím tắt(widget)
 Đánh giá(rate us)
 
 Cài đặt(setting)
+
 ---
 ## Yêu cầu thiết bị:
-Android
+Tối thiểu Android 6
 
 minSdkVersion 22
+
 ---
 ## Giao diện chính:
 ### Home:

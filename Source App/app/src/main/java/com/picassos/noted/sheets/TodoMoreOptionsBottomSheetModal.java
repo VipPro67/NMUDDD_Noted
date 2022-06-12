@@ -182,7 +182,7 @@ public class TodoMoreOptionsBottomSheetModal extends BottomSheetDialogFragment {
 
     private void sendResult(int REQUEST_CODE) {
         Intent intent = new Intent();
-        Objects.requireNonNull(getTargetFragment()).onActivityResult(getTargetRequestCode(), TodoMoreOptionsBottomSheetModal.REQUEST_DELETE_ALL_COMPLETED_TASKS_CODE, intent);
+        Objects.requireNonNull(getTargetFragment()).onActivityResult(getTargetRequestCode(),REQUEST_CODE, intent);
         dismiss();
     }
 }

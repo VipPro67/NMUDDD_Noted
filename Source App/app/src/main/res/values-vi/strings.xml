@@ -34,7 +34,7 @@
     <string name="feedback_subject">Hãy cho chúng tôi biết chúng tôi có thể làm gì để cải thiện trải nghiệm của bạn với ứng dụng của chúng tôi</string>
     <string name="gmail_not_installed">Ứng dụng Gmail chưa được cài đặt trên thiết bị của bạn</string>
     <string name="fullscreen_mode">Chế độ toàn màn hình</string>
-    <string name="screen_on_mode">Chế độ bật màn hình</string>
+    <string name="screen_on_mode">Chế độ giữ màn hình</string>
     <string name="edit_category">Sửa thể loại</string>
     <string name="add_category">Thêm thể loại</string>
     <string name="category_deleted">Xoá thể loại</string>
